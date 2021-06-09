@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Home = () => {
+function Home() {
   return (
     <div>
       <h1>Welcome to GameLib.biz</h1>
