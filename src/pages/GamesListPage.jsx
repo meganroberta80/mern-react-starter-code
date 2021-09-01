@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { Link } from 'react-router-dom';
 import GameModel from '../models/GameModel';
 import Game from '../components/Game';
 
@@ -28,7 +29,11 @@ class GameList extends Component {
     // and create an array of Game components
     // using the map method
     const gamesJSX = this.state.gameData.map((gameObj, idx) => {
-      return <Game key={idx} gameObj={gameObj} />
+      return (
+        <Link to={`/games/${gameObj._id}`}>
+          <Game key={idx} gameObj={gameObj} />
+        </Link>
+      )
     });
 
     return gamesJSX;
@@ -37,7 +42,7 @@ class GameList extends Component {
   render() {
     return (
       <main>
-        <h1>All Games</h1>
+        <h1>All Games</h1> 
         { this.renderGames() }
       </main>
     );

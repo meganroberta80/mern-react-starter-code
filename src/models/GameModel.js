@@ -15,6 +15,15 @@ class GameModel {
         // Show the user message that says "Something went wrong getting your data. Please try again."
       })
   }
+
+  // Makes a fetch call to get a single game by its id
+
+  // Exercise
+  // - Have this method make a call to fetch data for a single game
+  // - when calling it pass in the id
+  static show(gameId) {
+
+  }
 }
 
 export default GameModel;
