@@ -1,8 +1,8 @@
 function HomePage() {
   return (
-    <div>
+    <main>
       <h1>Welcome to GameLib.biz</h1>
-    </div>
+    </main>
   );
 }
 
