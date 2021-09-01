@@ -28,6 +28,9 @@ class GameList extends Component {
     // loop through array of games in state
     // and create an array of Game components
     // using the map method
+    // this.state.gameData = [{}, {}, {}]
+    // [<Game />, <Game />, <Game />]
+
     const gamesJSX = this.state.gameData.map((gameObj, idx) => {
       return (
         <Link to={`/games/${gameObj._id}`}>

@@ -17,12 +17,10 @@ class GameModel {
   }
 
   // Makes a fetch call to get a single game by its id
-
-  // Exercise
-  // - Have this method make a call to fetch data for a single game
-  // - when calling it pass in the id
   static show(gameId) {
-
+    // http://localhost:4000/api/games/223423234
+    return fetch(`${url}/${gameId}`)
+      .then((response) => response.json())
   }
 }
 
