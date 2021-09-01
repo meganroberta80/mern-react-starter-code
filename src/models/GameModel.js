@@ -9,9 +9,10 @@ class GameModel {
         // convert the response into a usable form
         return response.json()
       })
-      .then((data) => {
-        console.log('All the game data =>')
-        console.log(data);
+      .catch((err) => {
+        // handle the error
+        console.log(err);
+        // Show the user message that says "Something went wrong getting your data. Please try again."
       })
   }
 }
