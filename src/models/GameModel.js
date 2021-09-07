@@ -1,4 +1,4 @@
-const url = 'http://localhost:4000/api/games';
+const url = 'https://gamelib-megan.herokuapp.com/api/games';
 
 // This is where we will still the logic to make our API calls.
 class GameModel {
